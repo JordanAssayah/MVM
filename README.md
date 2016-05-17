@@ -1,27 +1,27 @@
 # MMWF
-Make music with feet (over WIFI)
 
-For now, the project uses only browsers, but after finalization of the webapp,
-it will be an electron application to be multi-platform.
+> A Vue.js project
 
-##Dependencies
+## Build Setup
 
-We are using different modules to build this project :
-* [Bulma](https://bulma.io "Bulma CSS Framework") as the CSS Framework (it uses SASS).
-* [Gulp](http://gulpjs.com/ "Task runner") as the task runner.
-* [VueJS](http://vuejs.org/ "Javascript Framework") as the Javascript Framework.
+``` bash
+# install dependencies
+npm install
 
-Check the `package.json` file to see other dependencies.
+# serve with hot reload at localhost:8080
+npm run dev
 
-## Download and run the project
+# build for production with minification
+npm run build
 
-```bash
-#Clone the repository locally
-git clone git@github.com:JordanAssayah/MMWF.git
+# lint all *.js and *.vue files
+npm run lint
 
-#Move in the project folder
-cd MMWF
+# run unit tests
+npm test
 
-#This will lunch an application in your default browser
-gulp serve
+# Use gulp to compile bulma.sass to bulma.css
+gulp
 ```
+
+For more information see the [docs for vueify](https://github.com/vuejs/vueify).

@@ -15,5 +15,4 @@ function toggleSideMenu(){
 
 function addClassLoading(element){
   $(element).addClass('is-loading');
-  $(element).addClass('is-disabled');
 }
