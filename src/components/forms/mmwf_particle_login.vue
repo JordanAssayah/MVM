@@ -1,12 +1,10 @@
 <template>
-  <div class="column is-4 is-offset-4" id="test">
-    <div class="box">
+  <div class="column is-4 is-offset-4">
+    <div class="box" id="particle-form">
       <div align="center">
         <img src="img/particle.png" width="120" height="120">
       </div>
       <hr>
-      <p>
-        {{ token }}
       </p>
       <p class="control has-icon">
         <input class="input" type="email" name="email" placeholder="Email" v-model="email">
@@ -21,7 +19,7 @@
           <p class="control">
             <label class="checkbox is-unselectable">
               <input type="checkbox" name="remember-me">
-              Remember me {{ msg }}
+              Remember me
             </label>
           </p>
         </div>
@@ -39,7 +37,6 @@
 
 <script>
   import Particle from 'particle-api-js'
-  var token
 
   export default {
     data () {
@@ -53,18 +50,27 @@
     },
     methods: {
       particleLogin: function () {
-        let initialClasses = document.querySelector('#login').className
-        document.querySelector('#login').className += " is-loading";
+        let self = this
+        let btnLogin = document.querySelector('#login')
+        btnLogin.classList.toggle('is-loading')
         this.particle.login({username: this.email, password: this.password}).then(
           function (data) {
             console.log('API call completed on promise resolve: ', data.body.access_token)
-            document.querySelector('#login').className = initialClasses
+            btnLogin.classList.toggle('is-loading')
+            self.$dispatch('token-generated',self.token = data.body.access_token)
+            self.hideParticleForm()
           },
           function (err) {
             console.log('API call completed on promise fail: ', err)
-            document.querySelector('#login').className = initialClasses
+            btnLogin.classList.toggle('is-loading')
           }
         )
+      },
+      hideParticleForm: function () {
+        let self = this
+        $('#particle-form').slideUp(1300, function () {
+          $('#particle-form').remove()
+        })
       }
     }
   }
