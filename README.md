@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/JordanAssayah/MMWF.png?label=ready&title=Ready)](https://waffle.io/JordanAssayah/MMWF)
 # MMWF
 
 > A Vue.js project
