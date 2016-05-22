@@ -1,7 +1,10 @@
 [![Stories in Ready](https://badge.waffle.io/JordanAssayah/MMWF.png?label=ready&title=Ready)](https://waffle.io/JordanAssayah/MMWF)
 # MMWF
-
-> A Vue.js project
+<div align="center" id="images-framework">
+  <img src="img/bulma.png" alt="Bulma Framework CSS" width="100" height="100"> +
+  <img  src="img/vuejs.png" alt="VueJS Framework JavaScript" width="100" height="100"> +
+</div>
+Make music with feet
 
 ## Build Setup
 
