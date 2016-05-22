@@ -28,5 +28,8 @@
   </header>
 </template>
 
-<script>
-</script>
+<style>
+  .light-bar{
+    border-bottom: solid 3px #4b4b4b;
+  }
+</style>

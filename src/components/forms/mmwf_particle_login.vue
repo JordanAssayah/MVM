@@ -57,7 +57,7 @@
           function (data) {
             console.log('API call completed on promise resolve: ', data.body.access_token)
             btnLogin.classList.toggle('is-loading')
-            self.$dispatch('token-generated',self.token = data.body.access_token)
+            self.$dispatch('token-generated', self.token = data.body.access_token)
             self.hideParticleForm()
           },
           function (err) {
@@ -67,7 +67,6 @@
         )
       },
       hideParticleForm: function () {
-        let self = this
         $('#particle-form').slideUp(1300, function () {
           $('#particle-form').remove()
         })
