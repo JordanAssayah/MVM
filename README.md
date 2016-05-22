@@ -2,10 +2,10 @@
 [![Stories in Ready](https://badge.waffle.io/JordanAssayah/MVM.png?label=ready&title=Ready)](https://waffle.io/JordanAssayah/MVM)
 
 This project use the following components :
-- [Bulma](https://bulma.io "Framework CSS based on Flexbox") (CSS)
+- [Bulma](http://bulma.io "Framework CSS based on Flexbox") (CSS)
 - [VueJS](https://vuejs.org "Framework JavaScript similar to React") (JS)
-- [Gulp](https://gulp.io "Task Runner") (TaskRunner)
-- [Browserify](https://browserify.org "JavaScript Bundler") (Bundler)
+- [Gulp](https://gulpjs.com "Task Runner") (TaskRunner)
+- [Browserify](http://browserify.org "JavaScript Bundler") (Bundler)
 - [Particle Server](https://github.com/spark/spark-server "REST API Server") (REST API Server)
 - [Particle API JS](https://docs.particle.io/reference/javascript/ "JS SDK") (JS SDK to interact with REST API)
 
