@@ -1,6 +1,9 @@
 [![Stories in Ready](https://badge.waffle.io/JordanAssayah/MMWF.png?label=ready&title=Ready)](https://waffle.io/JordanAssayah/MMWF)
 # MMWF
-<img align="center" src="img/bulma.png" alt="Bulma Framework CSS">
+<div align="center">
+  <img align="center" src="img/bulma.png" alt="Bulma Framework CSS" width="100" height="100">
+</div>
+
 Make music with feet
 
 ## Build Setup
