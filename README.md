@@ -2,12 +2,12 @@
 [![Stories in Ready](https://badge.waffle.io/JordanAssayah/MVM.png?label=ready&title=Ready)](https://waffle.io/JordanAssayah/MVM)
 
 This project use the following components :
-- [Bulma]("https://bulma.io") (CSS)
-- [VueJS]("https://vuejs.org") (JS)
-- [Gulp]("https://gulp.io") (TaskRunner)
-- [Browserify]("https://browserify.org") (Bundler)
-- [Particle Server]("https://github.com/spark/spark-server") (REST API Server)
-- [Particle API JS]("https://docs.particle.io/reference/javascript/") (JS SDK to interact with REST API)
+- [Bulma](https://bulma.io "Framework CSS based on Flexbox") (CSS)
+- [VueJS](https://vuejs.org "Framework JavaScript similar to React") (JS)
+- [Gulp](https://gulp.io "Task Runner") (TaskRunner)
+- [Browserify](https://browserify.org "JavaScript Bundler") (Bundler)
+- [Particle Server](https://github.com/spark/spark-server "REST API Server") (REST API Server)
+- [Particle API JS](https://docs.particle.io/reference/javascript/ "JS SDK") (JS SDK to interact with REST API)
 
 ## Download and run the project
 
@@ -51,26 +51,26 @@ For more information see the [docs for vueify](https://github.com/vuejs/vueify).
 ```
 ./
 +-- dist/
-|   +-- build.js    [All the final JS code compiled]
+|   +-- build.js        [All the final JS code compiled]
 +-- bulma/
-|   +-- bulma.sass  [Importing bulma and generate customized style]
-+-- img/            [A folder with static images]
-+-- scripts/        [A folder that contains some js files]
-+-- src/            [Here is the main temlpates App]
-|   +-- components/ [Specific components (app templates e.g.: mmwf-XXX)]
-|   +-- pages/      [Page templates e.g.: Home.vue]
-|   +-- App.vue     [Main template]
-|   +-- main.js     [Import all the file to be built (build.js)]
-|   +-- routes.js   [The routing file]
-+-- stylesheets/    [Contains the compiled css of bulma]
+|   +-- bulma.sass      [Importing bulma and generate customized style]
++-- img/                [A folder with static images]
++-- scripts/            [A folder that contains some js files]
++-- src/                [Here is the main temlpates App]
+|   +-- components/     [Specific components (app templates e.g.: mmwf-XXX)]
+|   +-- pages/          [Page templates e.g.: Home.vue]
+|   +-- App.vue         [Main template]
+|   +-- main.js         [Import all the file to be built (build.js)]
+|   +-- routes.js       [The routing file]
++-- stylesheets/        [Contains the compiled css of bulma]
 +-- test/
 |   +-- unit/
-+-- .babelrc        [ECMAScript config]
-+-- .eslint         [Linter config]
++-- .babelrc            [ECMAScript config]
++-- .eslint             [Linter config]
 +-- .gitignore
-+-- gulpfile.js     [Gulp tasks]
-+-- index.html      [Main entry App]
-+-- karma.conf.js   [PhantomJS config]
-+-- package.json    [Contains all the npm components of the App]
-+-- README.md       [Guide]
++-- gulpfile.js         [Gulp tasks]
++-- index.html          [Main entry App]
++-- karma.conf.js       [PhantomJS config]
++-- package.json        [Contains all the npm components of the App]
++-- README.md           [Guide]
 ```
