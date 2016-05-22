@@ -1,8 +1,8 @@
 [![Stories in Ready](https://badge.waffle.io/JordanAssayah/MMWF.png?label=ready&title=Ready)](https://waffle.io/JordanAssayah/MMWF)
 # MMWF
 <div align="center">
-  <img src="img/bulma.png" alt="Bulma Framework CSS" width="100" height="100"> <h1>+</h1>
-  <img src="img/vuejs.png" alt="VueJS Framework JavaScript" width="100" height="100"> <h1>+</h1>
+  <img src="img/bulma.png" alt="Bulma Framework CSS" width="100" height="100"> <p>+</p>
+  <img src="img/vuejs.png" alt="VueJS Framework JavaScript" width="100" height="100"> <p>+</p>
 </div>
 
 Make music with feet
