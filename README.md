@@ -1,32 +1,76 @@
-<div align="center" id="images-framework">
-  <a href="http://vuejs.org" target="_blank"><img src="img/vuejs.png" alt="VueJS Framework JavaScript" width="100" height="100"></a>
-  <a href="http://particle.io" target="_blank"><img src="img/particle_logo.png" alt="VueJS Framework JavaScript" width="100" height="100"></a>
-  <a href="http://bulma.io" target="_blank"><img src="img/bulma.png" alt="Bulma Framework CSS" width="100" height="100"></a>
-</div>
+# MVM (Make Visual Music)
+[![Stories in Ready](https://badge.waffle.io/JordanAssayah/MVM.png?label=ready&title=Ready)](https://waffle.io/JordanAssayah/MVM)
 
-# VOB
-[![Stories in Ready](https://badge.waffle.io/JordanAssayah/MMWF.png?label=ready&title=Ready)](https://waffle.io/JordanAssayah/MMWF)
+This project use the following components :
+- [Bulma]("https://bulma.io") (CSS)
+- [VueJS]("https://vuejs.org") (JS)
+- [Gulp]("https://gulp.io") (TaskRunner)
+- [Browserify]("https://browserify.org") (Bundler)
+- [Particle Server]("https://github.com/spark/spark-server") (REST API Server)
+- [Particle API JS]("https://docs.particle.io/reference/javascript/") (JS SDK to interact with REST API)
 
-## Build Setup
+## Download and run the project
 
-``` bash
+```bash
+# Clone the project
+$ git clone https://github.com/JordanAssayah/MVM.git
+
+# Enter in the forlder and install dependencies
+$ cd MVM && npm i
+
+# Run the "Dev" Server
+$ npm run dev
+```
+
+## Project Commands
+
+```bash
 # install dependencies
-npm install
+$ npm i
 
 # serve with hot reload at localhost:8080
-npm run dev
+$ npm run dev
 
 # build for production with minification
-npm run build
+$ npm run build
 
 # lint all *.js and *.vue files
-npm run lint
+$ npm run lint
 
 # run unit tests
-npm test
+$ npm test
 
 # Use gulp to compile bulma.sass to bulma.css
-gulp
+$ gulp
 ```
 
 For more information see the [docs for vueify](https://github.com/vuejs/vueify).
+
+## Folder Structures
+
+```
+./
++-- dist/
+|   +-- build.js    [All the final JS code compiled]
++-- bulma/
+|   +-- bulma.sass  [Importing bulma and generate customized style]
++-- img/            [A folder with static images]
++-- scripts/        [A folder that contains some js files]
++-- src/            [Here is the main temlpates App]
+|   +-- components/ [Specific components (app templates e.g.: mmwf-XXX)]
+|   +-- pages/      [Page templates e.g.: Home.vue]
+|   +-- App.vue     [Main template]
+|   +-- main.js     [Import all the file to be built (build.js)]
+|   +-- routes.js   [The routing file]
++-- stylesheets/    [Contains the compiled css of bulma]
++-- test/
+|   +-- unit/
++-- .babelrc        [ECMAScript config]
++-- .eslint         [Linter config]
++-- .gitignore
++-- gulpfile.js     [Gulp tasks]
++-- index.html      [Main entry App]
++-- karma.conf.js   [PhantomJS config]
++-- package.json    [Contains all the npm components of the App]
++-- README.md       [Guide]
+```
