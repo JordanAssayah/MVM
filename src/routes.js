@@ -2,12 +2,12 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
 import notFound from './pages/NotFound.vue'
-import mmwfHomePage from './pages/Home.vue'
-import mmwfSettingsPage from './pages/Settings.vue'
+import mvmHomePage from './pages/Home.vue'
+import mvmSettingsPage from './pages/Settings.vue'
 
 Vue.component('app', App)
-Vue.component('mmwf-home-page', mmwfHomePage)
-Vue.component('mmwf-settings-page', mmwfSettingsPage)
+Vue.component('mvm-home-page', mvmHomePage)
+Vue.component('mvm-settings-page', mvmSettingsPage)
 Vue.component('not-found', notFound)
 
 Vue.use(VueRouter)
@@ -22,10 +22,10 @@ router.map({
     component: notFound
   },
   '/': {
-    component: mmwfHomePage
+    component: mvmHomePage
   },
   '/settings': {
-    component: mmwfSettingsPage
+    component: mvmSettingsPage
   }
 })
 

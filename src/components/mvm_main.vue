@@ -8,7 +8,7 @@
         </div>
       </section>
   </main>
-  <aside class="menu side-menu-mmwf">
+  <aside class="menu side-menu-mvm">
     <ul class="menu-list">
       <li @click="closeMenu">
         <a v-link="{ path: '/create-project' }">
@@ -57,11 +57,11 @@
 </template>
 
 <script>
-  import mmwfParticleLogin from './forms/mmwf_particle_login.vue'
+  import mvmParticleLogin from './forms/mvm_particle_login.vue'
 
   export default {
     components: {
-      mmwfParticleLogin
+      mvmParticleLogin
     },
     methods: {
       closeMenu: function () {

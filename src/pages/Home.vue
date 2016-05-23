@@ -1,11 +1,11 @@
 <template>
-  <mmwf-particle-login></mmwf-particle-login>
+  <mvm-particle-login></mvm-particle-login>
 </template>
 
 <script>
-  import mmwfParticleLogin from '../components/forms/mmwf_particle_login.vue'
+  import mvmParticleLogin from '../components/forms/mvm_particle_login.vue'
 
   export default {
-    components: { mmwfParticleLogin }
+    components: { mvmParticleLogin }
   }
 </script>

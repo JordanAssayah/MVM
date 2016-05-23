@@ -20,9 +20,9 @@ $red: #ed6c63 !default
 $turquoise: #1fc8db !default
 $yellow: #fce473 !default
 
-$dark-light-mmwf: #3a3a3a !default
-$dark-mmwf: #2d2d2d !default
-$border-light-mmwf: #4b4b4b !default
+$dark-light-mvm: #3a3a3a !default
+$dark-mvm: #2d2d2d !default
+$border-light-mvm: #4b4b4b !default
 
 // Typography
 
@@ -85,8 +85,8 @@ $info-invert: findColorInvert($info) !default
 $success-invert: findColorInvert($success) !default
 $warning-invert: findColorInvert($warning) !default
 $danger-invert: findColorInvert($danger) !default
-$dark-mmwf-invert: findColorInvert($dark-mmwf) !default
-$dark-light-mmwf-invert: findColorInvert($dark-light-mmwf) !default
+$dark-mvm-invert: findColorInvert($dark-mvm) !default
+$dark-light-mvm-invert: findColorInvert($dark-light-mvm) !default
 
 $light-invert: $dark !default
 $dark-invert: $light !default
@@ -154,7 +154,7 @@ $size-huge: $size-1 !default
 
 // 4. Lists and maps
 
-$colors: (white: ($white, $black), black: ($black, $white), light: ($light, $light-invert), dark: ($dark, $dark-invert), primary: ($primary, $primary-invert), info: ($info, $info-invert), success: ($success, $success-invert), warning: ($warning, $warning-invert), danger: ($danger, $danger-invert), dark-mmwf: ($dark-mmwf, $dark-mmwf-invert), dark-light-mmwf: ( $dark-light-mmwf, $dark-light-mmwf-invert)) !default
+$colors: (white: ($white, $black), black: ($black, $white), light: ($light, $light-invert), dark: ($dark, $dark-invert), primary: ($primary, $primary-invert), info: ($info, $info-invert), success: ($success, $success-invert), warning: ($warning, $warning-invert), danger: ($danger, $danger-invert), dark-mvm: ($dark-mvm, $dark-mvm-invert), dark-light-mvm: ( $dark-light-mvm, $dark-light-mvm-invert)) !default
 
 $sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 !default
 
@@ -166,12 +166,12 @@ $sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 !default
 
 body
   height: 100vh
-  background: $dark-mmwf
+  background: $dark-mvm
 
 hr
   height: 1px
   border: 0
-  border-top: 2px solid $dark-mmwf
+  border-top: 2px solid $dark-mvm
 
 .main-header
   z-index: 999
@@ -185,15 +185,15 @@ hr
 
 .section
   height: 100%
-  background: $dark-mmwf
+  background: $dark-mvm
 
 .nav
-  background: $dark-mmwf
+  background: $dark-mvm
   a
     color: $grey
 
 .box
-  background: $dark-light-mmwf
+  background: $dark-light-mvm
 
 .nav-toggle
   visibility: visible
@@ -204,7 +204,7 @@ hr
     height: 2px
     background: $grey
   &:hover
-    background: $dark-mmwf
+    background: $dark-mvm
 
 .menu-list
   span.icon
@@ -212,12 +212,12 @@ hr
     margin-left: 3px
   a
     &:hover
-      background: $dark-light-mmwf
+      background: $dark-light-mvm
 
-.side-menu-mmwf
+.side-menu-mvm
   height: calc(100vh - 55px)
-  background: $dark-mmwf
-  border-right: 3px solid $border-light-mmwf
+  background: $dark-mvm
+  border-right: 3px solid $border-light-mvm
   z-index: 99
   position: fixed
   bottom: 0
@@ -225,10 +225,10 @@ hr
   a
     padding-right: 20px
   li
-    border-bottom: 3px solid $border-light-mmwf
+    border-bottom: 3px solid $border-light-mvm
     width: 100%
     &:hover
-      background: $dark-light-mmwf
+      background: $dark-light-mvm
 
 .pull-down
   position: absolute
