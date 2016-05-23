@@ -78,6 +78,17 @@ For more information see the [docs for vueify](https://github.com/vuejs/vueify).
 +-- README.md           [Guide]
 ```
 
+## [Particle.io](https://particle.io)
+
+Helpfull links:
+
+- [Particle Device Firmware](https://docs.particle.io/reference/firmware/photon/)
+- [Particle Cloud API](https://docs.particle.io/reference/api/)
+- [CLI Command Reference](https://docs.particle.io/reference/cli/)
+- [Particle API JS](https://docs.particle.io/reference/javascript/)
+
+This is what we use to compile the code to flash in our [Particle Photon](https://www.particle.io/prototype)
+
 ## How to contribute
 ### Getting started
 
