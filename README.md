@@ -128,9 +128,9 @@ When you're done, commit your changes by prefixing the commit message with the s
 Because you compose your comment with the id of the story, it will move automatically in the [MVM Board](https://waffle.io/JordanAssayah/MVM) **BUT** always take a look a it.
 Like that, it will be always up to date.
 
-**Important !!!**
+### Last commit before `For Dev Review`
 
-When it is the **LAST** commit (before you push the card in [MVM Board](https://waffle.io/JordanAssayah/MVM) to "For Dev Review"), add to your comment the following tags :
+When it is the last commit (before you push the card in [MVM Board](https://waffle.io/JordanAssayah/MVM) to "For Dev Review"), add to your comment the following tags :
 
 If it's a bug :
 
