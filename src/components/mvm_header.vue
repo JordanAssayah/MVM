@@ -13,13 +13,13 @@
           <span class="icon">
             <i class="fa fa-github"></i>
           </span>
-          MMWF
+          mvm
         </a>
       </div>
       <div class="nav-right nav-menu">
         <p class="control has-addons nav-item">
           <input class="input" type="text" placeholder="Search a node's name">
-          <button class="button is-dark-light-mmwf">
+          <button class="button is-dark-light-mvm">
             <p>Search</p>
           </button>
         </p>

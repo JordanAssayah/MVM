@@ -1,4 +1,4 @@
-var sideMenu = $('.side-menu-mmwf');
+var sideMenu = $('.side-menu-mvm');
 
 function toggleSideMenu(){
   if(sideMenu.css('margin-left')=='0px'){

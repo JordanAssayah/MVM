@@ -1,6 +1,6 @@
 {
-  "name": "mmwf",
-  "description": "A Vue.js project",
+  "name": "mvm",
+  "description": "Make Visual Music (A Vue.js project)",
   "author": "Jordan Assayah <jordan.assayah@liip.ch>",
   "private": true,
   "scripts": {

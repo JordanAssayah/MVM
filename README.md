@@ -1,4 +1,5 @@
 # MVM (Make Visual Music)
+[![Backlog](https://badge.waffle.io/JordanAssayah/MVM.png?label=backlog&title=Backlog)](https://waffle.io/JordanAssayah/MVM)
 [![Stories in Ready](https://badge.waffle.io/JordanAssayah/MVM.png?label=ready&title=Ready)](https://waffle.io/JordanAssayah/MVM)
 [![Stories in Progress](https://badge.waffle.io/JordanAssayah/MVM.png?label=In%20Progress&title=In%20Progress)](https://waffle.io/JordanAssayah/MVM)
 [![Stories in Dev review](https://badge.waffle.io/JordanAssayah/MVM.png?label=In%20Dev%20Review&title=For%20Dev%20Review)](https://waffle.io/JordanAssayah/MVM)
@@ -60,7 +61,7 @@ For more information see the [docs for vueify](https://github.com/vuejs/vueify).
 +-- img/                [A folder with static images]
 +-- scripts/            [A folder that contains some js files]
 +-- src/                [Here is the main temlpates App]
-|   +-- components/     [Specific components (app templates e.g.: mmwf-XXX)]
+|   +-- components/     [Specific components (app templates e.g.: mvm-XXX)]
 |   +-- pages/          [Page templates e.g.: Home.vue]
 |   +-- App.vue         [Main template]
 |   +-- main.js         [Import all the file to be built (build.js)]
