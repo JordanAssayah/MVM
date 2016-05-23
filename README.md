@@ -118,10 +118,18 @@ Because you compose your comment with the id of the story, it will move automati
 Like that, it will be always up to date.
 
 **Important !!!**
+
 At the end of your changes, when it is the **LAST** commit (before you push the card in [MVM Board](https://waffle.io/JordanAssayah/MVM) to "For Dev Review"), add to your comment the following tags :
+If it's a bug :
 
 ```bash
-$ git commit -m "MVM-#XXX **closed** blablabla... "
+$ git commit -m "MVM-bug-fix-closed#XXX blablabla... "
+```
+
+If it's an improvement :
+
+```bash
+$ git commit -m "MVM-closed#XXX blablabla... "
 ```
 
 [Open a pull request](https://github.com/liip/zebra/compare) so another developer can review your changes.
