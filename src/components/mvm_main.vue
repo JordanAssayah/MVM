@@ -10,7 +10,7 @@
   </main>
   <aside class="menu side-menu-mvm">
     <ul class="menu-list">
-      <li>
+      <li @click="closeMenu">
         <a v-link="{ path: '/create-project' }">
           <span class="icon">
             <i class="fa fa-plus"></i>
@@ -18,7 +18,7 @@
           Create a new project
         </a>
       </li>
-      <li>
+      <li @click="closeMenu">
         <a v-link="{ path: '/open-project' }">
           <span class="icon">
             <i class="fa fa-folder"></i>
@@ -26,7 +26,7 @@
           Open a project
         </a>
       </li>
-      <li>
+      <li @click="closeMenu">
         <a v-link="{ path: '/wifi-terface' }">
           <span class="icon">
             <i class="fa fa-cubes"></i>
@@ -34,7 +34,7 @@
           Use the wifiterface
         </a>
       </li>
-      <li>
+      <li @click="closeMenu">
         <a v-link="{ path: '/sounds' }">
           <span class="icon">
             <i class="fa fa-music"></i>
@@ -44,7 +44,7 @@
       </li>
     </ul>
     <ul class="menu-list pull-down">
-      <li>
+      <li @click="closeMenu">
         <a v-link="{ path: '/settings' }">
           <span class="icon">
             <i class="fa fa-sliders"></i>
@@ -62,6 +62,11 @@
   export default {
     components: {
       mvmParticleLogin
+    },
+    methods: {
+      closeMenu: function () {
+        toggleSideMenu()
+      }
     }
   }
 </script>
