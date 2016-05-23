@@ -16,10 +16,11 @@ $blue: #42afe3 !default
 $green: #97cd76 !default
 $orange: #f68b39 !default
 $purple: #847bb9 !default
-$red: #ed6c63 !default
+$red: #E85248 !default
 $turquoise: #1fc8db !default
 $yellow: #fce473 !default
 
+$dark-extra-light-mvm: #424242 !default
 $dark-light-mvm: #3a3a3a !default
 $dark-mvm: #2d2d2d !default
 $border-light-mvm: #4b4b4b !default
@@ -198,6 +199,36 @@ hr
 .nav-toggle
   visibility: visible
 
+.title
+  color: $grey
+
+// Panel component
+// ------------------------------------------------------------------
+.panel-heading
+  background: $dark-light-mvm
+  border-bottom: 2px solid $dark-extra-light-mvm
+  color: $grey
+.panel
+  border: 1px solid $dark-light-mvm
+// ------------------------------------------------------------------
+
+// Table component
+// ------------------------------------------------------------------
+.table
+  background: $dark-light-mvm
+  color: $grey
+  th
+    border: 1px solid $border-light-mvm
+  td
+    border-bottom: 1px solid $border-light-mvm
+  tr
+    &:hover
+      background: #414141
+      color: $grey
+// ------------------------------------------------------------------
+.delete
+  outline: none
+
 .hamburger
   display: block
   span
@@ -223,6 +254,7 @@ hr
   bottom: 0
   margin-left: -300px
   a
+    color: $grey
     padding-right: 20px
   li
     border-bottom: 3px solid $border-light-mvm

@@ -9,7 +9,7 @@
         </span>
       </div>
       <div class="nav-center">
-        <a class="nav-item" href="#">
+        <a class="nav-item" href="https://github.com/JordanAssayah/MVM" target="_blank">
           <span class="icon">
             <i class="fa fa-github"></i>
           </span>

@@ -11,19 +11,11 @@
   <aside class="menu side-menu-mvm">
     <ul class="menu-list">
       <li @click="closeMenu">
-        <a v-link="{ path: '/create-project' }">
+        <a v-link="{ path: '/project-manager' }">
           <span class="icon">
             <i class="fa fa-plus"></i>
           </span>
-          Create a new project
-        </a>
-      </li>
-      <li @click="closeMenu">
-        <a v-link="{ path: '/open-project' }">
-          <span class="icon">
-            <i class="fa fa-folder"></i>
-          </span>
-          Open a project
+          Project manager
         </a>
       </li>
       <li @click="closeMenu">
