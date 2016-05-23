@@ -87,7 +87,7 @@ Helpfull links:
 - [CLI Command Reference](https://docs.particle.io/reference/cli/)
 - [Particle API JS](https://docs.particle.io/reference/javascript/)
 
-This is what we use to compile the code to flash in our [Particle Photon](https://www.particle.io/prototype)
+This is what we use to compile the code to flash our [Particle Photon](https://www.particle.io/prototype).
 
 ## How to contribute
 ### Getting started
