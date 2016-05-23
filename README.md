@@ -77,3 +77,51 @@ For more information see the [docs for vueify](https://github.com/vuejs/vueify).
 +-- package.json        [Contains all the npm components of the App]
 +-- README.md           [Guide]
 ```
+
+## How to contribute
+### Getting started
+
+* Make sure you have a [Github](https://github.com/signup/free) account.
+* [Create a story](https://waffle.io/JordanAssayah/MVM) for your issue, assuming one does not already exist.
+	* Clearly describe the issue including steps to reproduce if applicable
+	* Make sure you fill in the earliest version that you know has the issue
+
+### Pull Requests
+If you want to fix bugs or make improvements, just go to https://waffle.io/JordanAssayah/MVM or https://github.com/JordanAssayah/MVM/issues and pick a story.
+Don't forget to move cards in the [MVM Board](https://waffle.io/JordanAssayah/MVM).
+
+### Making Changes
+
+Ensure your copy is up-to-date :
+
+```bash
+$ git checkout master && git fetch && git pull
+```
+
+Create a new branch named with the waffle story ID (replace `XXX` by the story number):
+
+If it's a bug :
+
+```bash
+$ git checkout -b MVM-bug-fix#XXX
+```
+
+If it's an improvement :
+
+```bash
+$ git checkout -b MVM-#XXX
+```
+
+When you're done, commit your changes by prefixing the commit message with the story ID, for example: `MVM-#5 Update the README.md file`.
+
+Because you compose your comment with the id of the story, it will move automatically in the [MVM Board](https://waffle.io/JordanAssayah/MVM) **BUT** always take a look a it.
+Like that, it will be always up to date.
+
+**Important !!!**
+At the end of your changes, when it is the **LAST** commit (before you push the card in [MVM Board](https://waffle.io/JordanAssayah/MVM) to "For Dev Review"), add to your comment the following tags :
+
+```bash
+$ git commit -m "MVM-#XXX **closed** blablabla... "
+```
+
+[Open a pull request](https://github.com/liip/zebra/compare) so another developer can review your changes.
