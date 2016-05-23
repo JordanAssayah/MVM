@@ -135,13 +135,13 @@ When it is the last commit (before you push the card in [MVM Board](https://waff
 If it's a bug :
 
 ```bash
-$ git commit -m "MVM-bug-fix-closed#XXX blablabla... "
+$ git commit -m "closed #XXX MVM-bug-fix#XXX blablabla... "
 ```
 
 If it's an improvement :
 
 ```bash
-$ git commit -m "MVM-closed#XXX blablabla... "
+$ git commit -m "closed #XXX MVM-#XXX blablabla... "
 ```
 
 [Open a pull request](https://github.com/liip/zebra/compare) so another developer can review your changes.
