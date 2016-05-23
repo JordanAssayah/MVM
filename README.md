@@ -125,10 +125,10 @@ $ git checkout -b MVM-#XXX
 
 When you're done, commit your changes by prefixing the commit message with the story ID, for example: `MVM-#5 Update the README.md file`.
 
-Because you compose your comment with the id of the story, it will move automatically in the [MVM Board](https://waffle.io/JordanAssayah/MVM) **BUT** always take a look a it.
+Because you compose your comment with the id of the story, it will move automatically in the [MVM Board](https://waffle.io/JordanAssayah/MVM) **but** always take a look a it.
 Like that, it will be always up to date.
 
-### Last commit before `For Dev Review`
+### Last commit before `Dev Review`
 
 When it is the last commit (before you push the card in [MVM Board](https://waffle.io/JordanAssayah/MVM) to "For Dev Review"), add to your comment the following tags :
 
