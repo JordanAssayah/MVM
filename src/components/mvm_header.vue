@@ -13,7 +13,7 @@
           <span class="icon">
             <i class="fa fa-github"></i>
           </span>
-          mvm
+          MVM
         </a>
       </div>
       <div class="nav-right nav-menu">
