@@ -2,7 +2,6 @@
 [![Stories in Ready](https://badge.waffle.io/JordanAssayah/MVM.png?label=ready&title=Ready)](https://waffle.io/JordanAssayah/MVM)
 [![Stories in Progress](https://badge.waffle.io/JordanAssayah/MVM.png?label=In%20Progress&title=In%20Progress)](https://waffle.io/JordanAssayah/MVM)
 [![Stories in Dev review](https://badge.waffle.io/JordanAssayah/MVM.png?label=In%20Dev%20Review&title=For%20Dev%20Review)](https://waffle.io/JordanAssayah/MVM)
-[![Closed stories](https://badge.waffle.io/JordanAssayah/MVM.png?label=done&title=Done)](https://waffle.io/JordanAssayah/MVM)
 
 This project use the following components :
 - [Bulma](http://bulma.io "Framework CSS based on Flexbox") (CSS)
