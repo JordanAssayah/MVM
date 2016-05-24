@@ -1,21 +1,36 @@
 <template>
-  <div class="column is-10 is-offset-2">
+  <div class="column is-6 is-offset-3">
     <h1 class="title is-1 ">Project manager</h1>
   </div>
-  <div class="column is-2 is-offset-2">
-    <button class="button is-info is-fullwidth" v-on:click="toggleModalCreateProject">Create a new project</button>
-    <br>
-    <button class="button is-info is-fullwidth" v-on:click="toggleModalOpenProject">Open a project</button>
-    <br>
-    <button class="button is-danger is-fullwidth" v-on:click="toggleModalDeleteProject">Delete selected project(s)</button>
+  <div class="column is-6 is-offset-3">
+    <div class="box">
+      <p class="control" >
+        <button class="button is-info" v-on:click="toggleModalCreateProject">
+          Create a new project
+        </button>
+        <button class="button is-info" v-on:click="toggleModalOpenProject">
+          Open a project
+        </button>
+        <button class="button is-danger" v-on:click="toggleModalDeleteProject">
+          Delete selected project(s)
+        </button>
+      </p>
+    </div>
   </div>
-  <div class="column is-6">
+  <div class="column is-6 is-offset-3">
+
     <div class="box">
       <table class="table is-marginless">
         <thead>
           <tr>
             <th></th>
             <th>Name</th>
+            <th>
+              Description
+            </th>
+            <th>
+              Cloud name
+            </th>
             <th>Last Opened</th>
           </tr>
         </thead>
@@ -24,12 +39,24 @@
             <td>
               <mvm-checkbox></mvm-checkbox>
             </td>
+            <td>
+              rgwergewrg
+            </td>
+            <td>
+              sergewergwerg
+            </td>
             <td>Misty Abbott</td>
             <td>Bass Guitar</td>
           </tr>
           <tr>
             <td>
               <mvm-checkbox></mvm-checkbox>
+            </td>
+            <td>
+              rgwergewrg
+            </td>
+            <td>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </td>
             <td>John Smith</td>
             <td>Rhythm Guitar</td>
@@ -38,12 +65,24 @@
             <td>
               <mvm-checkbox></mvm-checkbox>
             </td>
+            <td>
+              rgwergewrg
+            </td>
+            <td>
+              sergewergwerg
+            </td>
             <td>Robert Mikels</td>
             <td>Lead Guitar</td>
           </tr>
           <tr>
             <td>
               <mvm-checkbox></mvm-checkbox>
+            </td>
+            <td>
+              lorem
+            </td>
+            <td>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </td>
             <td>Karyn Holmberg</td>
             <td>Drums</td>
@@ -74,7 +113,7 @@
         <label class="label">Local sounds folder</label>
         <p class="control has-addons">
           <input class="input" type="text" placeholder="Find a folder">
-          <button class="button">
+          <button class="button is-dark-mvm">
             Search
           </button>
         </p>

@@ -130,7 +130,7 @@ $link-active-border: $grey-darker !default
 
 // Control colors
 
-$control: $text-strong !default
+$control: $white !default
 $control-background: $text-invert !default
 $control-border: $border !default
 
@@ -169,6 +169,10 @@ body
   height: 100vh
   background: $dark-mvm
 
+select
+  background: #535353 !important
+  border-color: #535353 !important
+
 hr
   height: 1px
   border: 0
@@ -202,6 +206,9 @@ hr
 .title
   color: $grey
 
+.delete
+  outline: none
+
 // Panel component
 // ------------------------------------------------------------------
 .panel-heading
@@ -226,8 +233,37 @@ hr
       background: #414141
       color: $grey
 // ------------------------------------------------------------------
-.delete
-  outline: none
+
+// Modal component
+// ------------------------------------------------------------------
+.modal-card-head
+  background: $dark-mvm
+  border-bottom: 1px solid $dark-mvm
+.modal-card-foot
+  border-top: 1px solid $dark-mvm
+  background: $dark-mvm
+.modal-card-title
+  color: $grey
+.modal-card
+  background: $dark-light-mvm
+.modal
+  .label
+    color: $grey
+  .delete
+    background: $dark-extra-light-mvm
+    &:hover
+      background: #535353
+// ------------------------------------------------------------------
+
+.input
+  background: #535353
+  border-color: #535353
+
+.control
+  &.has-icon
+    .input
+      &:focus + .fa
+        color: $white
 
 .hamburger
   display: block
