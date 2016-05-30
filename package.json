@@ -1,13 +1,13 @@
 {
-  "name": "mvm",
-  "description": "Make Visual Music (A Vue.js project)",
+  "name": "vuex_tutorial",
+  "description": "A Vue.js project",
   "author": "Jordan Assayah <jordan.assayah@liip.ch>",
   "private": true,
   "scripts": {
-    "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o dist/build.js",
+    "watchify": "watchify -vd -p browserify-hmr -e components/main.js -o dist/build.js",
     "serve": "http-server -c 1 -a localhost",
     "dev": "npm-run-all --parallel watchify serve",
-    "build": "cross-env NODE_ENV=production browserify -e src/main.js | uglifyjs -c warnings=false -m > dist/build.js",
+    "build": "cross-env NODE_ENV=production browserify -e components/main.js | uglifyjs -c warnings=false -m > dist/build.js",
     "lint": "eslint --ext .js,.vue src test/unit",
     "test": "karma start karma.conf.js"
   },
@@ -17,6 +17,9 @@
       "babelify"
     ]
   },
+  "dependencies": {
+    "vue": "^1.0.0"
+  },
   "devDependencies": {
     "babel-core": "^6.0.0",
     "babel-plugin-transform-runtime": "^6.0.0",
@@ -24,6 +27,7 @@
     "babel-preset-stage-2": "^6.0.0",
     "babel-runtime": "^6.0.0",
     "babelify": "^7.2.0",
+    "bootstrap": "^3.3.6",
     "browserify": "^12.0.1",
     "browserify-hmr": "^0.3.1",
     "bulma": "0.0.26",
@@ -34,8 +38,8 @@
     "gulp-autoprefixer": "^3.1.0",
     "gulp-gh-pages": "^0.5.4",
     "gulp-imagemin": "^3.0.1",
-    "gulp-load-plugins": "^1.2.2",
-    "gulp-sass": "^2.3.1",
+    "gulp-less": "^3.1.0",
+    "gulp-load-plugins": "^1.2.4",
     "http-server": "^0.9.0",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.15",
@@ -44,15 +48,15 @@
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-spec-reporter": "0.0.23",
     "npm-run-all": "^1.6.0",
-    "particle-api-js": "^5.2.7",
     "phantomjs-prebuilt": "^2.1.3",
     "proxyquireify": "^3.0.1",
+    "semantic-ui": "^2.1.8",
     "uglify-js": "^2.5.0",
-    "vue": "^1.0.24",
     "vue-hot-reload-api": "^1.2.2",
     "vue-router": "^0.7.13",
     "vueify": "^8.0.0",
     "vueify-insert-css": "^1.0.0",
+    "vuex": "^0.6.3",
     "watchify": "^3.4.0"
   }
 }

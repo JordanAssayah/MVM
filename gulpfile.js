@@ -8,6 +8,7 @@
 /**
  * Load dependencies
  */
+ var path = require('path');
 var gulp          = require('gulp'),
     $             = require('gulp-load-plugins')();
 
@@ -16,7 +17,7 @@ var gulp          = require('gulp'),
  */
 var config = {
   src: {
-    sass:       'bulma/**/*.sass',
+    less:       'bootstrap/**/*.less',
     templates:  '**/*.html',
   },
   dest: {
@@ -36,19 +37,19 @@ var config = {
 /**
  * Watching files for changes & serve
  */
-gulp.task('watch', ['sass'], function() {
-  gulp.watch(config.src.sass, ['sass']);
+gulp.task('watch', ['less'], function() {
+  gulp.watch(config.src.less, ['less']);
 });
 
 /**
  * Compile Sass into CSS
  * Add vendor prefixes with Autoprefixer
  */
-gulp.task('sass', function() {
-  return gulp.src(config.src.sass)
-    .pipe($.sass({
-      outputStyle: 'compressed'
-    }).on('error', $.sass.logError))
+gulp.task('less', function() {
+  return gulp.src(config.src.less)
+    .pipe($.less({
+      paths: [ path.join(__dirname, 'less', 'includes') ]
+    }))
     .pipe($.autoprefixer(config.autoprefixer))
     .pipe(gulp.dest(config.dest.css));
 });

@@ -4,7 +4,7 @@
 [![Stories in Dev review](https://badge.waffle.io/JordanAssayah/MVM.png?label=In%20Dev%20Review&title=For%20Dev%20Review)](https://waffle.io/JordanAssayah/MVM)
 
 This project use the following components :
-- [Bulma](http://bulma.io "Framework CSS based on Flexbox") (CSS)
+- [Bootstrap](http://getbootstrap.com "Framework CSS based on Flexbox") (CSS)
 - [VueJS](https://vuejs.org "Framework JavaScript similar to React") (JS)
 - [Gulp](https://gulpjs.com "Task Runner") (TaskRunner)
 - [Browserify](http://browserify.org "JavaScript Bundler") (Bundler)
@@ -42,7 +42,7 @@ $ npm run lint
 # run unit tests
 $ npm test
 
-# Use gulp to compile bulma.sass to bulma.css
+# Use gulp to compile bootstrap.less to mvm.css
 $ gulp
 ```
 
@@ -54,17 +54,20 @@ For more information see the [docs for vueify](https://github.com/vuejs/vueify).
 ./
 +-- dist/
 |   +-- build.js        [All the final JS code compiled]
-+-- bulma/
-|   +-- bulma.sass      [Importing bulma and generate customized style]
++-- bootstrap/
+|   +-- bootstrap.less  [Importing bootstrap and generate customized style]
 +-- img/                [A folder with static images]
 +-- scripts/            [A folder that contains some js files]
-+-- src/                [Here is the main temlpates App]
-|   +-- components/     [Specific components (app templates e.g.: mvm-XXX)]
-|   +-- pages/          [Page templates e.g.: Home.vue]
++-- components/         [Specific components (app templates e.g.: mvm-XXX)]
 |   +-- App.vue         [Main template]
 |   +-- main.js         [Import all the file to be built (build.js)]
 |   +-- routes.js       [The routing file]
-+-- stylesheets/        [Contains the compiled css of bulma]
++-- stylesheets/        [Contains the compiled css of bootstrap]
++-- pages/          		[Page templates e.g.: Home.vue]
++-- vuex/
+|		+-- store.js				[Contains all stores and mutations]
+|		+-- getters.js			[Contains all functions to get stores]
+|		+-- actions.js			[Contains all dispatch functions]
 +-- test/
 |   +-- unit/
 +-- .babelrc            [ECMAScript config]
