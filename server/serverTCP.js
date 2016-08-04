@@ -2,7 +2,7 @@ var net = require('net');
 
 var HOST = '192.168.1.117';
 var PORT = 6969;
-
+// Can use socket.io for help
 // Create a server instance, and chain the listen function to it
 // The function passed to net.createServer() becomes the event handler for the 'connection' event
 // The sock object the callback function receives UNIQUE for each connection
