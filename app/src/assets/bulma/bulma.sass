@@ -1,0 +1,387 @@
+@import "../../../node_modules/bulma/sass/utilities/functions"
+// 1. Initial variables
+
+// Colors
+
+$black: #111 !default
+$grey-darker: #222324 !default
+$grey-dark: #69707a !default
+$grey: #aeb1b5 !default
+$grey-light: #d3d6db !default
+$grey-lighter: #f5f7fa !default
+$white: #fff !default
+$mainBackground: #252830 !default
+$pLight: #31353f !default
+$blue: #42afe3 !default
+$green: #97cd76 !default
+$orange: #f68b39 !default
+$purple: #847bb9 !default
+$red: #ed6c63 !default
+$turquoise: $orange !default
+$yellow: #fce473 !default
+// #1fc8db
+// Typography
+
+$family-sans-serif: "Source Sans Pro", "Helvetica", sans-serif !default
+$family-monospace: "Consolas", monospace !default
+
+$size-1: 48px !default
+$size-2: 40px !default
+$size-3: 28px !default
+$size-4: 24px !default
+$size-5: 18px !default
+$size-6: 14px !default
+
+$size-7: 11px !default
+
+$weight-normal: 400 !default
+$weight-bold: 700 !default
+$weight-title-normal: 300 !default
+$weight-title-bold: 500 !default
+
+// Breakpoints
+
+$tablet: 769px !default
+$desktop: 980px !default
+$widescreen: 1180px !default
+
+// Dimensions
+
+$column-gap: 20px !default
+
+$nav-height: 50px !default
+
+// Miscellaneous
+
+$easing: ease-out !default
+$radius-small: 2px !default
+$radius: 3px !default
+$radius-large: 5px !default
+$speed: 86ms !default
+
+// 2. Primary colors
+
+$primary: $turquoise !default
+
+$info: $blue !default
+$success: $green !default
+$warning: $yellow !default
+$danger: $red !default
+
+$light: $grey-lighter !default
+$dark: $grey-dark !default
+
+$text: $grey-dark !default
+
+// 3. Generated variables
+
+// Invert colors
+
+$primary-invert: findColorInvert($primary) !default
+
+$info-invert: findColorInvert($info) !default
+$success-invert: findColorInvert($success) !default
+$warning-invert: findColorInvert($warning) !default
+$danger-invert: findColorInvert($danger) !default
+
+$light-invert: $dark !default
+$dark-invert: $light !default
+
+// General colors
+
+$body-background: $grey-lighter !default
+
+$background: $grey-lighter !default
+
+$border: $grey-light !default
+$border-hover: $grey !default
+
+// Text colors
+
+$text-invert: findColorInvert($text) !default
+$text-light: $grey !default
+$text-strong: $white !default
+
+// Code colors
+
+$code: $grey !default
+$code-background: #31353f !default
+
+$pre: $text !default
+$pre-background: $background !default
+
+// Link colors
+
+$link: $primary !default
+$link-invert: $primary-invert !default
+$link-visited: $purple !default
+
+$link-hover: $white !default
+$link-hover-background: #31353f !default
+$link-hover-border: $grey-darker !default
+
+$link-active: $primary !default
+$link-active-border: #31353f !default
+
+// Control colors
+
+$control: $text-strong !default
+$control-background: $text-invert !default
+$control-border: $border !default
+
+$control-hover: $link-hover !default
+$control-hover-border: $border-hover !default
+
+$control-active: $link !default
+$control-active-background: $link !default
+$control-active-background-invert: $link-invert !default
+$control-active-border: $link !default
+
+// Typography
+
+$family-primary: $family-sans-serif !default
+$family-code: $family-monospace !default
+
+$size-small: $size-7 !default
+$size-normal: $size-6 !default
+$size-medium: $size-5 !default
+$size-large: $size-3 !default
+$size-huge: $size-1 !default
+
+// 4. Lists and maps
+
+$colors: (white: ($white, $black), black: ($black, $white), light: ($light, $light-invert), dark: ($dark, $dark-invert), primary: ($primary, $primary-invert), info: ($info, $info-invert), success: ($success, $success-invert), warning: ($warning, $warning-invert), danger: ($danger, $danger-invert)) !default
+
+$sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 !default
+
+@import "../../../node_modules/bulma/bulma"
+@import "./panel"
+@import "./table"
+@import "./tabs"
+@import "./button"
+@import "./modal"
+@import "./form"
+
+html, body, .section
+    background: #252830
+
+
+html, body
+    height: 100vh
+
+.is-white
+    background: #fff
+
+.hr-colored
+    border-top: 1px solid #434857
+
+
+.border-light
+    border: 1px solid #434857
+
+
+.is-fullwidth
+    width: 100%
+
+
+.is-paddingless
+    padding: 0
+
+
+.is-marginless
+    margin: 0
+
+
+.nav
+    background: #31353f
+
+
+.table-border-in-table
+    border-radius: 0px 0px 4px 4px
+
+
+.is-content-centered
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+.add-mrg
+    margin: 10px
+
+
+.add-mrgt-l1
+    margin-top: 10px
+
+
+.add-mrgb-l1
+    margin-bottom: 10px
+
+
+.add-mrgb-l2
+    margin-bottom: 20px
+
+
+.add-mrgb-l3
+    margin-bottom: 30px
+
+
+.add-mrgr-l1
+    margin-right: 7px
+
+
+.add-mrgr-l2
+    margin-right: 20px
+
+
+.add-mrgr-l3
+    margin-right: 30px
+
+
+.add-mrgl-l1
+    margin-left: 10px
+
+
+.add-mrgl-l2
+    margin-left: 20px
+
+
+.add-mrgl-l3
+    margin-left: 30px
+
+
+.add-mrgtb-l1
+    margin-top: 10px
+    margin-bottom: 10px
+
+
+.rm-mrgt
+    margin-top: 0px !important
+
+
+.rm-mrgb
+    margin-bottom: 0px !important
+
+
+.rm-mrgr
+    margin-right: 0px !important
+
+
+.add-pdgt-l1
+    padding-top: 10px
+
+
+.add-pdgb-l1
+    padding-bottom: 10px
+
+
+.add-pdgl-l1
+    padding-left: 10px
+
+
+.add-pdgtb-l1
+    padding-top: 10px
+    padding-bottom: 10px
+
+
+.add-pdg
+    padding: 10px
+
+
+.add-pdg-l2
+    padding: 20px
+
+
+.add-pdg-l3
+    padding: 30px
+
+
+.text-color-light
+    color: #f4f4f4 !important
+
+
+.rm-pdgl
+    padding-left: 0
+
+.rm-pdg
+    padding: 0
+
+.img-responsive
+    max-width: 100%
+    height: auto
+
+
+.sensor-table
+    border-spacing: 0px 10px
+    border-collapse: separate
+
+
+.sensor-table td
+    vertical-align: middle
+
+
+.sensor-table td.first-column
+    width: 140px
+
+.is-rounded
+    border-radius: 5px
+
+
+.is-rounded-top
+    border-radius: 5px 5px 0px 0px
+
+
+.is-rounded-bottom
+    border-radius: 0px 0px 5px 5px
+
+
+.big-box-shadow
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)!important
+
+
+.v-align-center
+    align-self: center
+
+
+.v-txt-align-middle
+    vertical-align: middle
+
+.box
+    background: #31353f
+
+.input
+    color: #a2a2a2
+    background-color: #252830
+    border: 1px solid #31353f
+
+.particle-table
+    overflow-x: scroll
+
+.particle-table code
+    font-size: 14px
+
+.particle-table td .button
+    font-size: 14px
+
+
+
+
+// Scrollbar
+::-webkit-scrollbar
+    width: 7px
+    height: 7px
+::-webkit-scrollbar-button
+
+::-webkit-scrollbar-track
+    background: transparent
+::-webkit-scrollbar-track-piece
+    background: transparent
+::-webkit-scrollbar-thumb
+    border-radius: 4px
+    background: transparent
+    border: 1px solid $primary
+
+::-webkit-scrollbar-corner
+    background: transparent
+
+::-webkit-resizer

@@ -1,0 +1,24 @@
+{
+  "name": "vue_1.0.26",
+  "version": "0.0.0",
+  "description": "An electron-vue project",
+  "main": "electron.js",
+  "dependencies": {
+    "vue": "^1.0.26",
+    "vue-electron": "^1.0.0",
+    "vue-resource": "^0.7.0",
+    "vue-router": "^0.7.13",
+    "vuex": "^0.6.3"
+  },
+  "devDependencies": {
+    "bulma": "^0.1.2",
+    "node-sass": "^3.8.0",
+    "particle-api-js": "^6.0.4",
+    "sass-loader": "^4.0.1",
+    "vue-bulma-slider": "^1.0.0",
+    "vue-bulma-switch": "^1.0.0",
+    "vue-bulma-tooltip": "^1.0.0",
+    "vue-devtools": "^2.0.4"
+  },
+  "author": "Jordan Assayah <jordan.assayah@liip.ch>"
+}
