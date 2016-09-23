@@ -40,12 +40,12 @@
                   <td>
                     <div class="control is-grouped">
                       <p class="control">
-                        <a class="button is-warning is-small is-outlined">
+                        <a class="button is-warning is-small">
                           Send signal
                         </a>
                       </p>
                       <p class="control">
-                        <a v-link="{ path: '/particle-interface/device/' + device.id + '/settings' }" class="button is-danger is-small is-outlined">
+                        <a v-link="{ path: '/particle-interface/device/' + device.id + '/settings' }" class="button is-danger is-small">
                           <span class="icon is-small">
                             <i class="fa fa-sliders"></i>
                           </span>

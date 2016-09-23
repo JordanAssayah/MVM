@@ -12,6 +12,7 @@ const state = {
   loops: [],
   numberOfLoops: 0,
   audioContext: audio,
+  sounds: [],
   loading: false,
   error: '',
   showError: false
@@ -42,6 +43,9 @@ const mutations = {
   },
   UPDATE_BUFFER (state, buffer) {
     state.buffer = buffer
+  },
+  PUSH_SOUNDS (state, sounds) {
+    state.sounds = sounds
   },
   SET_ERROR (state, error) {
     state.error = error

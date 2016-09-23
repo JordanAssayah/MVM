@@ -10,8 +10,8 @@
           </div>
           <div class="column is-6">
             <div class="is-pulled-right">
-              <span class="icon"style="color: #cb6b22">
-                <i class="fa fa-circle"></i>
+              <span class="icon" style="color: #cb6b22">
+                <a v-on:click="" style="color: #cb6b22"><i class="fa fa-circle"></i></a>
               </span>
             </div>
           </div>

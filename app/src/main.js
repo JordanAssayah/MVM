@@ -42,7 +42,7 @@ var router = new VueRouter({
   history: true,
   saveScrollPostion: true,
   linkActiveClass: 'is-active',
-  root: '/my-account'
+  root: '/'
 })
 
 router.map({

@@ -1,6 +1,8 @@
 /**
  * Importing libraries
  */
+import fs from 'fs'
+import path from 'path'
 import Particle from 'particle-api-js'
 
 /**
@@ -253,6 +255,81 @@ const setMediaRecorderEventsForLoop = ({ dispatch, state }, loopId) => {
   }
 }
 
+const loadAllSounds = ({ dispatch, state }, electronPath, AudioContext) => {
+  let sounds = _loadSoundsFromFolder(path.join(electronPath, '../../../../../../../app/dist/sounds/'), AudioContext)
+  console.log(sounds)
+  dispatch('PUSH_SOUNDS', sounds)
+}
+
+const loadSoundBuffer = (folderName, name, AudioContext) => {
+  return new window.Promise(function (resolve, reject) {
+    let audio = AudioContext
+    let request = new window.XMLHttpRequest()
+    request.open('GET', 'file:///' + folderName + name, true)
+    request.responseType = 'arraybuffer'
+    request.onload = () => {
+      if (request.status >= 200 && request.status < 300) {
+        audio.decodeAudioData(request.response, (buffer) => {
+          resolve(buffer)
+        }, (e) => {
+          console.log(e)
+        })
+      } else {
+        reject({
+          status: request.status,
+          statusText: request.statusText
+        })
+      }
+    }
+    request.onerror = () => {
+      reject({
+        status: this.status,
+        statusText: request.statusText
+      })
+    }
+    request.send()
+  })
+}
+
+const _loadSoundsFromFolder = (folderName, AudioContext) => {
+  let sounds = []
+  fs.readdir(folderName, function (err, files) {
+    if (err) {
+      throw err
+    }
+    for (let file of files) {
+      fs.stat(folderName + file, function (err, stats) {
+        if (err) {
+          console.log(err)
+          return // exit here since stats will be undefined
+        }
+        if (stats.isFile() && !file.startsWith('.')) {
+          loadSoundBuffer(folderName, file, AudioContext).then(
+            (success) => {
+              let audioElement = new Audio()
+              let path = 'file:///' + folderName + file
+              audioElement.src = path
+              let soundDuration = success.duration
+              let buffer = success
+              let audio = { name: file, audioElement, soundDuration, path, buffer }
+
+              sounds.push(audio)
+            }
+          ).catch(
+            (error) => {
+              console.log(error)
+            }
+          )
+        }
+        if (stats.isDirectory()) {
+          // console.error(file)
+        }
+      })
+    }
+  })
+  return sounds
+}
+
 /**
  * JavaScript cast functions
  */
@@ -288,5 +365,6 @@ export {
   addLoop,
   setMediaRecorderEventsForLoop,
   loadSoundConfig,
+  loadAllSounds,
   toMMSSMS
 }

@@ -10,8 +10,8 @@
               </div>
             </div>
             <div class="level-right">
-              <p class="level-item"><a class="button is-dark is-outlined">Create a new project</a></p>
-              <p class="level-item"><a class="button is-dark is-outlined">Import a project</a></p>
+              <p class="level-item"><a class="button is-dark">Create a new project</a></p>
+              <p class="level-item"><a class="button is-dark">Import a project</a></p>
             </div>
           </nav>
         </div>

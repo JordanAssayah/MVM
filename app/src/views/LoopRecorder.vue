@@ -19,12 +19,6 @@
           </div>
         </template>
         <p class="has-text-centered">
-          <a class="button is-info is-outlined is-medium" @click="playKick">
-            play kick
-          </a>
-          <a class="button is-info is-outlined is-medium" @click="playSnare">
-            play snare
-          </a>
           <a class="button is-info is-outlined is-medium">
             <span class="add-mrgr-l1">Start Recording</span>
             <span class="icon">

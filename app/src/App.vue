@@ -2,7 +2,7 @@
   <div>
     <header>
       <div class="nav has-shadow">
-        <div class="container is-fluid">
+        <div class="container">
           <div class="nav-left">
             <a class="nav-item" href="https://github.com/JordanAssayah/VOB" target="_blank">
               <span class="icon">

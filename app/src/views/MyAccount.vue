@@ -13,7 +13,7 @@
           <input class="input" type="password" placeholder="Password" v-model="password">
           <i class="fa fa-lock"></i>
         </p>
-        <button class="button is-success is-outlined" :class="{ 'is-loading': isLoading }" @click="loginToParticle(email, password)">
+        <button class="button is-success" :class="{ 'is-loading': isLoading }" @click="loginToParticle(email, password)">
           Sign in
         </button>
         <a href="https://build.particle.io/forgot-password" target="_blank" class="button is-link">
@@ -29,7 +29,7 @@
           <i class="fa fa-key"></i>
         </p>
         <p class="control">
-          <button class="button is-success is-outlined">
+          <button class="button is-success">
             Use your token
           </button>
         </p>
@@ -47,13 +47,22 @@
 </template>
 
 <script>
-import { loginToParticle } from '../../vuex/actions'
-import { isLoading } from '../../vuex/getters'
+import { loginToParticle, loadAllSounds } from '../../vuex/actions'
+import { isLoading, getAudioContext } from '../../vuex/getters'
+
 export default {
   data () { return { email: '', password: '' } },
   vuex: {
-    actions: { loginToParticle },
-    getters: { isLoading }
+    actions: { loginToParticle, loadAllSounds },
+    getters: { isLoading, AudioContext: getAudioContext }
+  },
+  methods: {
+    getPath () {
+      return this.$electron.remote.app.getAppPath()
+    }
+  },
+  created () {
+    this.loadAllSounds(this.getPath(), this.AudioContext)
   }
 }
 </script>
