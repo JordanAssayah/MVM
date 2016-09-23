@@ -3,7 +3,7 @@
         <div class="columns">
             <div class="column is-3">
                 <div class="rm-mrgr is-content-centered">
-                    <img src="../../assets/photon.png" class="img-responsive" alt="photon device" width="128" />
+                    <img v-bind:src="photonImg" class="img-responsive" alt="photon device" width="128" />
                 </div>
             </div>
             <div class="column is-8 v-align-center">
@@ -101,6 +101,7 @@
     import Slider from 'vue-bulma-slider'
     import Switch from 'vue-bulma-switch'
     import Tooltip from 'vue-bulma-tooltip'
+    import path from 'path'
 
     export default {
         components: { Slider, Switch, Tooltip },
@@ -110,7 +111,8 @@
                 sensorValue: 0,
                 isSensorSelected: false,
                 deviceIndex: null,
-                deviceId: this.$route.params.deviceId
+                deviceId: this.$route.params.deviceId,
+                photonImg: ''
             }
         },
         vuex: {
@@ -123,6 +125,9 @@
             },
             updateSensorValue (sensorSelected, type) {
                 this.saveSensorOfDeviceConfig(this.deviceIndex, sensorSelected, type, this.devices[this.deviceIndex].sensors[sensorSelected][type])
+            },
+            getPathImgPhoton () {
+                return path.join(this.$electron.remote.app.getAppPath(), '../../../../../app/src/assets/photon.png')
             }
         },
         ready () {
@@ -131,6 +136,7 @@
                     this.deviceIndex = i
                 }
             }
+            this.photonImg = this.getPathImgPhoton()
         }
     }
 </script>
