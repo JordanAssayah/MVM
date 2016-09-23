@@ -18,38 +18,38 @@ const state = {
 }
 
 const mutations = {
-  UPDATE_PARTICLE_TOKEN(state, token) {
+  UPDATE_PARTICLE_TOKEN (state, token) {
     state.particleToken = token
   },
-  UPDATE_PARTICLE_DEVICE(state, deviceIndex, deviceInfo) {
+  UPDATE_PARTICLE_DEVICE (state, deviceIndex, deviceInfo) {
     Object.assign(state.particleDevices[deviceIndex], state.particleDevices[deviceIndex], deviceInfo)
   },
-  PUSH_PARTICLE_DEVICE(state, deviceAttributes) {
+  PUSH_PARTICLE_DEVICE (state, deviceAttributes) {
     state.particleDevices.push(deviceAttributes)
   },
-  UPDATE_DEVICE_CONFIG(state, deviceIndex, sensorIndex, type, sensorValue) {
+  UPDATE_DEVICE_CONFIG (state, deviceIndex, sensorIndex, type, sensorValue) {
     state.particleDevices[deviceIndex].sensors[sensorIndex][type] = sensorValue
   },
-  TIMER_ID_OF_UPDATE_LIST_DEVICES(state, timerId) {
+  TIMER_ID_OF_UPDATE_LIST_DEVICES (state, timerId) {
     state.updateTimerIdForListDevices = timerId
   },
-  CLEAR_INTERVAL(state, timerId) {
+  CLEAR_INTERVAL (state, timerId) {
     clearInterval(state.updateTimerIdForListDevices)
   },
-  PUSH_NEW_LOOP(state, newLoop) {
+  PUSH_NEW_LOOP (state, newLoop) {
     state.numberOfLoops++
-      state.loops.push(newLoop)
+    state.loops.push(newLoop)
   },
-  UPDATE_BUFFER(state, buffer) {
+  UPDATE_BUFFER (state, buffer) {
     state.buffer = buffer
   },
-  SET_ERROR(state, error) {
+  SET_ERROR (state, error) {
     state.error = error
   },
-  SHOW_ERROR(state, boolean) {
+  SHOW_ERROR (state, boolean) {
     state.showError = boolean
   },
-  LOADING(state, boolean) {
+  LOADING (state, boolean) {
     state.loading = boolean
   }
 }

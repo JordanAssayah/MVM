@@ -77,7 +77,7 @@ const clearIntervalForTimer = ({ dispatch, state }) => {
   dispatch('CLEAR_INTERVAL', state.updateTimerIdForListDevices)
 }
 
-const saveDeviceConfig = function({ dispatch, state }, config) {
+const saveDeviceConfig = function ({ dispatch, state }, config) {
   // console.log(config)
 }
 
@@ -208,7 +208,7 @@ const loadSensorsConfig = () => {
     { IO: 'A3', activeFrom: 0, volume: 0, useVelocitySensor: false, toggleSensor: false, soundPath: '' },
     { IO: 'A4', activeFrom: 0, volume: 0, useVelocitySensor: false, toggleSensor: false, soundPath: '' },
     { IO: 'A5', activeFrom: 0, volume: 0, useVelocitySensor: false, toggleSensor: false, soundPath: '' }
-    ]
+  ]
 }
 
 const loadSoundConfig = () => {}
