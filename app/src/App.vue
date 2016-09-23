@@ -45,8 +45,8 @@
 </template>
 
 <script>
-  import store from '../vuex/store'
-  export default { store }
+import store from '../vuex/store'
+export default { store }
 </script>
 
 <style src="./assets/bulma/bulma.sass" lang="sass"></style>

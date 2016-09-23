@@ -39,43 +39,43 @@ Vue.use(VueResource)
 Vue.use(Electron)
 
 var router = new VueRouter({
-    history: true,
-    saveScrollPostion: true,
-    linkActiveClass: 'is-active',
-    root: '/my-account'
+  history: true,
+  saveScrollPostion: true,
+  linkActiveClass: 'is-active',
+  root: '/my-account'
 })
 
 router.map({
-    '/my-account': {
-        component: MyAccount
-    },
-    '/project-manager': {
-        component: ProjectManager
-    },
-    '/particle-interface': {
-        component: ParticleInterface,
+  '/my-account': {
+    component: MyAccount
+  },
+  '/project-manager': {
+    component: ProjectManager
+  },
+  '/particle-interface': {
+    component: ParticleInterface,
+    subRoutes: {
+      '/list-device': {
+        component: DeviceList
+      },
+      '/device/:deviceId': {
+        component: Device,
         subRoutes: {
-            '/list-device': {
-                component: DeviceList
-            },
-            '/device/:deviceId': {
-                component: Device,
-                subRoutes: {
-                    '/settings': { component: DeviceSettings },
-                    '/sounds': { component: DeviceSounds },
-                    '/metrics': { component: DeviceMetrics }
-                }
-            }
+          '/settings': { component: DeviceSettings },
+          '/sounds': { component: DeviceSounds },
+          '/metrics': { component: DeviceMetrics }
         }
-    },
-    '/loop-recorder': {
-        component: LoopRecorder
+      }
     }
+  },
+  '/loop-recorder': {
+    component: LoopRecorder
+  }
 })
 
 router.redirect({
-    '/': '/my-account',
-    '/particle-interface': '/particle-interface/list-device'
+  '/': '/my-account',
+  '/particle-interface': '/particle-interface/list-device'
 })
 
 router.start(App, 'app')
